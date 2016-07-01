@@ -2,6 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
 }
 
 .container {
@@ -16,8 +21,10 @@
 section {
   position: relative;
   background-color: #BCE784;
-  border: 1px solid black;
-  height: 220px;
+  border: 2px solid black;
+  height: 220px;  
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 p.title {
@@ -25,7 +32,7 @@ p.title {
   color: white;
   background-color: red;
   float: right;
-  border: 1px solid black;
+  border: 2px solid black;
   border-top: 0;
   border-right: 0;
   padding: 5px;
@@ -50,14 +57,15 @@ p.content {
   padding: 10px;
   position: relative;
   float: left;
-  text-align: justify;
+  text-align: justify;     
 }
 
 @media (max-width: 767px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
   .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-    border: 20px solid white;
+    /* border: 20px solid white;*/
+    padding: 15px;
   }
 
   .col-sm-1 {
@@ -102,7 +110,7 @@ p.content {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
   .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 20px solid white;
+    padding: 15px;
   }
 
   .col-md-1 {
@@ -147,7 +155,7 @@ p.content {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
   .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 20px solid white;
+    padding: 15px;
   }
 
   .col-lg-1 {
