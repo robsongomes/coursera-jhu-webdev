@@ -2,6 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -21,19 +27,31 @@ h1 {
 section {
   position: relative;
   background-color: #BCE784;
+<<<<<<< HEAD
   border: 1px solid black;
   overflow: hidden;
   min-height: 200px;
   max-height: 250px;
+=======
+  border: 2px solid black;
+  height: 220px;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+>>>>>>> b04cff9b60b6a766e2d36dd2003916419ff80a8b
 }
 
 p.title {
   position: absolute;
   color: white;
   background-color: red;
+<<<<<<< HEAD
   top: 0;
   right: 0;
   border: 1px solid black;
+=======
+  float: right;
+  border: 2px solid black;
+>>>>>>> b04cff9b60b6a766e2d36dd2003916419ff80a8b
   border-top: 0;
   border-right: 0;
   padding: 5px;
@@ -57,14 +75,15 @@ p#title3 {
 p.content {
   padding: 40px 10px 10px;
   float: left;
-  text-align: justify;
+  text-align: justify;     
 }
 
 @media (max-width: 767px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
   .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-    border: 20px solid white;
+    /* border: 20px solid white;*/
+    padding: 15px;
   }
 
   .col-sm-1 {
@@ -109,7 +128,7 @@ p.content {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
   .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 20px solid white;
+    padding: 15px;
   }
 
   .col-md-1 {
@@ -154,7 +173,7 @@ p.content {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
   .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 20px solid white;
+    padding: 15px;
   }
 
   .col-lg-1 {
