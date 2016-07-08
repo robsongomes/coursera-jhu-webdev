@@ -11,20 +11,28 @@
 
 .row {
   width: 100%;
+  clear: both;
+}
+
+h1 {
+  text-align: center;
 }
 
 section {
   position: relative;
   background-color: #BCE784;
   border: 1px solid black;
-  height: 220px;
+  overflow: hidden;
+  min-height: 200px;
+  max-height: 250px;
 }
 
 p.title {
-  position: relative;
+  position: absolute;
   color: white;
   background-color: red;
-  float: right;
+  top: 0;
+  right: 0;
   border: 1px solid black;
   border-top: 0;
   border-right: 0;
@@ -47,8 +55,7 @@ p#title3 {
 }
 
 p.content {
-  padding: 10px;
-  position: relative;
+  padding: 40px 10px 10px;
   float: left;
   text-align: justify;
 }
